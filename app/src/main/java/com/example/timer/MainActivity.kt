@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
         binding?.startOrStopTextView?.setText(R.string.start)
+        binding?.startOrStopTextView?.setCompoundDrawablesWithIntrinsicBounds(android.R.drawable.ic_media_play, 0, 0,0)
         initStopWatch()
     }
     fun startOrStopButtonClicked(v: View) {
@@ -87,8 +88,6 @@ class MainActivity : AppCompatActivity() {
                 Log.e("timeInSeconds", timeInSeconds.toString())
                 updateStopWatchView(timeInSeconds)
             } finally {
-                // 100% guarantee that this always happens, even if
-                // your update method throws an exception
                 mHandler!!.postDelayed(this, mInterval.toLong())
             }
         }
