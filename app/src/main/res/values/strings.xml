@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="stop">STOP</string>
+    <string name="resume">RESUME</string>
+    <string name="start">START</string>
+    <string name="init_stop_watch_value">00:00:00</string>
+</resources>
